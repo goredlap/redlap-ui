@@ -1,0 +1,44 @@
+{
+  "name": "@redlap/ui",
+  "version": "0.1.0",
+  "description": "Reusable red-and-black React interface primitives with LaTeX-inspired typography.",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/redlap-ui.js",
+  "module": "./dist/redlap-ui.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/redlap-ui.js"
+    },
+    "./styles.css": "./dist/redlap-ui.css"
+  },
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "dev": "vite build --watch",
+    "prepare": "npm run build",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/stix-two-text": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
