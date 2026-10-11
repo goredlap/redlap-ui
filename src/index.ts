@@ -5,5 +5,5 @@ export { Button, type ButtonProps, type ButtonSize, type ButtonVariant } from '.
 export { Card, CardContent, CardHeader, type CardProps, type CardSectionProps } from './components/Card'
 export { Container, type ContainerProps } from './components/Container'
 export { TextInput, type TextInputProps } from './components/TextInput'
-export { Theme, type ThemeProps } from './components/Theme'
+export { Theme, type ThemeAppearance, type ThemeProps } from './components/Theme'
 export { Heading, Text, type HeadingProps, type TextProps } from './components/Typography'
